@@ -160,3 +160,23 @@ p {
 .call p {
     margin-bottom: 20px;
 }
+
+/* Portfólio */
+
+.portfolio {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #000;
+}
+.portfolio .subtitle {
+    color: #fec63e;
+}
+.portfolio .subtitle::after {
+    background-color: #fec63e;
+}
+.portfolio-list li:last-child {
+    margin-top: 20px;
+}
+.portfolio .call p {
+    color: #fff;
+}
