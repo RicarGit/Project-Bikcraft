@@ -92,3 +92,6 @@
 .contact-map {
     margin-bottom: 60px;
 }
+.contact-map img{
+    border: 8px double #fec63e;
+}
