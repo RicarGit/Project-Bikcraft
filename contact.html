@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/contact.css">
 		<link rel="stylesheet" href="css/responsive.css">
+		<script>document.documentElement.classList.add("js");</script>
 	</head>
 	<body>
 		<header class="header">
@@ -30,14 +31,14 @@
 		</header>
 		<section class="introducao-interna internal-contact">
 			<div class="container">
-				<h1>Contato</h1>
-				<p>Tire suas dúvidas com a gente</p>
+				<h1 data-anime="400" class="fadeInDown">Contato</h1>
+				<p data-anime="800" class="fadeInDown">Tire suas dúvidas com a gente</p>
 			</div>
 		</section>
 
 		<section class="contact">
 			<div class="container">
-				<form id="form-contact" class="form grid-8">
+				<form data-anime="1200" id="form-contact" class="form grid-8 fadeInLeft">
 					<label for="name">Nome</label>
 					<input type="text" id="name">
 					<label for="email">Email</label>
@@ -48,7 +49,7 @@
 					<textarea name="" id="espc"></textarea>
 					<button type="submit" class="btn btn-black">Enviar</button>
 				</form>
-				<div class="contact-dados grid-8">
+				<div data-anime="1200" class="contact-dados grid-8 fadeInRight">
 					<h3>Dados</h3>
 					<span>+55 21 93223 3232</span>
 					<span class="dados-email">Rua Ali Perto - Botafogo</span>
@@ -67,19 +68,19 @@
 			</div>
 		</section>
 
-		<section class="container contact-map">
+		<section data-anime="1600" class="container contact-map fadeInUp">
 				<a class="grid-16" href="https://www.google.com.br/maps" target="_blank"><img src="img/endereco-bikcraft.jpg" alt=""></a>
 		</section>
 
 		<section class="break">
-			<blockquote class="quote-externo container">
+			<blockquote data-anime="2000" class="quote-externo container fadeInDown">
 				<p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana."</p>
 				<cite>WILLIAM MORRIS</cite>
 			</blockquote>
 		</section>
 		<footer>
 			<div class="footer">
-				<div class="container">
+				<div data-anime="2400" class="container fadeInDown">
 					<div class="grid-8 footer-history">
 						<h3>Nossa História</h3>
 						<p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana cotidiana.
@@ -110,5 +111,9 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./js/simple-anime.js"></script>
+		<script src="./js/script.js"></script>
+
 	</body>
 </html>

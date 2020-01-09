@@ -340,3 +340,66 @@ img {
     background-color: #fec63e;
     padding: 20px 0;
 }
+
+/* JAVASCRIPT */
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+
+/* Nav Style */
+.js [data-slide-nav] {
+  display: block;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  margin: 4px;
+  padding: 0px;
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+/* ANIMATION */
+
+.js [data-anime] {
+    opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+.js .fadeInUp {
+  transform: translate3d(0,20px,0);
+}
+.js .fadeInRight {
+  transform: translate3d(20px,0,0);
+}
+.js .fadeInLeft {
+  transform: translate3d(-20px,0,0);
+}
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+}
