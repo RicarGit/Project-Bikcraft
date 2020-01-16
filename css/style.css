@@ -403,3 +403,12 @@ img {
     transform: none;
     transition: opacity 800ms, transform 800ms;
 }
+
+#form-sucesso,
+#form-sucesso h2 {
+    color: #31aa29;
+}
+#form-erro,
+#form-erro h2 {
+    color: #f64540;
+}

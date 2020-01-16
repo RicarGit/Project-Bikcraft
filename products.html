@@ -104,18 +104,18 @@
 		</section>
 
 		<section class="orcamento">
-			<div data-anime="3600" class="container fadeInDown">
+			<div data-anime="3600" method="POST" action="./enviar-sendgrid.php" class="container fadeInDown formphp">
 				<h2 class="subtitle">Orçamento</h2>
 				<form id="form-orcamento" class="form grid-8">
 					<label for="name">Nome</label>
-					<input type="text" id="name">
+					<input type="text" id="name" name="nome" required>
 					<label for="email">Email</label>
-					<input type="text" id="email">
+					<input type="email" id="email" name="email" required>
 					<label for="telephone">Telefone</label>
-					<input type="text" id="telephone">
-					<label for="espec">Especificações</label>
-					<textarea name="" id="espc"></textarea>
-					<button type="submit" class="btn">Enviar</button>
+					<input type="text" id="telephone" name="telefone">
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem" name="mensagem" required></textarea>
+					<button id="enviar" type="submit" class="btn">Enviar</button>
 				</form>
 				<div class="orcamento-dados grid-8">
 					<h3>Dados</h3>
@@ -175,6 +175,7 @@
 		</footer>
 
 		<script src="./js/simple-anime.js"></script>
+		<script src="./js/simple-form.js"></script>
 		<script src="./js/script.js"></script>
 		
 	</body>

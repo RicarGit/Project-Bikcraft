@@ -38,16 +38,16 @@
 
 		<section class="contact">
 			<div class="container">
-				<form data-anime="1200" id="form-contact" class="form grid-8 fadeInLeft">
+				<form data-anime="1200" id="form-contact" method="POST" action="./enviar-sendgrid.php" class="form grid-8 fadeInLeft formphp">
 					<label for="name">Nome</label>
-					<input type="text" id="name">
+					<input type="text" id="name" name="nome" required>
 					<label for="email">Email</label>
-					<input type="text" id="email">
+					<input type="email" id="email" name="email" required>
 					<label for="telephone">Telefone</label>
-					<input type="text" id="telephone">
-					<label for="espec">Especificações</label>
-					<textarea name="" id="espc"></textarea>
-					<button type="submit" class="btn btn-black">Enviar</button>
+					<input type="text" id="telephone" name="telefone">
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem" name="mensagem" required></textarea>
+					<button id="enviar" type="submit" class="btn btn-black">Enviar</button>
 				</form>
 				<div data-anime="1200" class="contact-dados grid-8 fadeInRight">
 					<h3>Dados</h3>
@@ -113,6 +113,7 @@
 		</footer>
 
 		<script src="./js/simple-anime.js"></script>
+		<script src="./js/simple-form.js"></script>
 		<script src="./js/script.js"></script>
 
 	</body>
