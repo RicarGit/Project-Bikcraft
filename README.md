@@ -30,11 +30,11 @@ This Project is just for Practice!
 
 # Portfolio Page
 
-![](Bikcraft-Portifólio.jpg)
+![](Bikcraft-Portfólio.jpg)
 
 # Portfolio Mobile
 
-![](Bikcraft-Portifólio-Mobile.jpg)
+![](Bikcraft-Portfólio-Mobile.jpg)
 
 # Contact Page
 
