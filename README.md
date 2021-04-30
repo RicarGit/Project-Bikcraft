@@ -4,6 +4,8 @@ This Project is just for Practice!
 
 # Adding the final result of the pages on my projects!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dcd1d1ab-18ef-43b8-8629-a065998e884e/deploy-status)](https://app.netlify.com/sites/amazing-kare-af0889/deploys) -- https://amazing-kare-af0889.netlify.app
+
 ## Home Page
 
 ![](Bikcraft-Home.jpg)
